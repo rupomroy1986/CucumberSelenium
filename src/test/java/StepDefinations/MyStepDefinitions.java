@@ -5,14 +5,13 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 import cucumber.api.junit.Cucumber;
-
 import pageObjects.CheckOutPage;
 import pageObjects.HomePage;
-
-import org.junit.Assert;
 import static org.junit.Assert.*;
+import org.junit.Assert;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -43,16 +42,39 @@ public class MyStepDefinitions {
 	
 	@Then("^\"([^\"]*)\" results are displayed$")
 	public void something_results_are_displayed(String strArg1) throws Throwable {
-	System.out.println(h.getProductName().getText());
+	//System.out.println(h.getProductName().getText());
+		Thread.sleep(5000);
+		
+		try
+		{
 	Assert.assertTrue(h.getProductName().getText().contains(strArg1));
+		}
+		catch(StaleElementReferenceException e)
+		{
+			Assert.assertTrue(h.getProductName().getText().contains(strArg1));
+		}
 	
 		      
 	}
 
 	@And("^Added items to cart$")
 	public void added_items_to_cart() throws Throwable {
+		try
+		{
 		h.increment().click();
+		}
+		catch(StaleElementReferenceException e) {
+			h.increment().click();
+		}
+		
+		try
+		{
 		h.addToCart().click();
+		}
+		catch(StaleElementReferenceException e)
+		{
+			h.addToCart().click();
+		}
 		
 	}
 
