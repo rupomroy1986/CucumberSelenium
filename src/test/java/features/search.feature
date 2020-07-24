@@ -11,6 +11,7 @@ Given User is on Greencart Landing page
 When User searched for <Name> Vegetable
 And Added items to cart
 And User proceeded to Checkout page for purchase
+
 Then verify selected <Name> items are displayed in Check out page
 
 Examples:

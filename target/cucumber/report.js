@@ -39,7 +39,7 @@ formatter.match({
   "location": "MyStepDefinitions.user_is_on_greencart_landing_page()"
 });
 formatter.result({
-  "duration": 6417645340,
+  "duration": 9658839284,
   "status": "passed"
 });
 formatter.match({
@@ -52,7 +52,7 @@ formatter.match({
   "location": "MyStepDefinitions.user_searched_for_vegetable(String)"
 });
 formatter.result({
-  "duration": 6117099070,
+  "duration": 5493942603,
   "status": "passed"
 });
 formatter.match({
@@ -65,11 +65,11 @@ formatter.match({
   "location": "MyStepDefinitions.something_results_are_displayed(String)"
 });
 formatter.result({
-  "duration": 5051881757,
+  "duration": 5063852319,
   "status": "passed"
 });
 formatter.after({
-  "duration": 593064521,
+  "duration": 169767714,
   "status": "passed"
 });
 });

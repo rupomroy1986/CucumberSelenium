@@ -1,2 +1,10 @@
 StepDefinations\stepDefination.class
 CucumberOptions\TestRunner.class
+hello.class
+MavenCucumber\MavenJavaRestAssured\Base.class
+dataDriven.class
+pageObjects\HomePage.class
+StepDefinations\MyStepDefinitions.class
+StepDefinations\Hooks.class
+pageObjects\CheckOutPage.class
+testSample.class

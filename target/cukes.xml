@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.179691">
-<testcase classname="Search and place order for Vegetables" name="Search for items and validate results" time="18.179691">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.386402">
+<testcase classname="Search and place order for Vegetables" name="Search for items and validate results" time="20.386402">
 <system-out><![CDATA[Given User is on Greencart Landing page.....................................passed
 When User searched for cucumber Vegetable...................................passed
 Then "Cucumber - 1 Kg" results are displayed................................passed

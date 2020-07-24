@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
 import MavenCucumber.MavenJavaRestAssured.Base;
 import cucumber.api.DataTable;
@@ -15,7 +16,7 @@ import cucumber.api.java.en.When;
 import static org.junit.Assert.*;
 import pageObjects.CheckOutPage;
 
-public class stepDefination extends Base {
+public class stepDefination extends Base  {
 	CheckOutPage cp;
 	
 	@Given("^User is on the landing page$")
@@ -42,7 +43,7 @@ public class stepDefination extends Base {
     }
     
     
-	
+	//here ware putting the Then verify selected <Name> items are displayed in Check out page to another step definition file and inheriting it
     @Then("^verify selected (.+) items are displayed in Check out page$")
     public void verify_selected_items_are_displayed_in_check_out_page(String name) throws Throwable {
   	  cp=new CheckOutPage(driver);

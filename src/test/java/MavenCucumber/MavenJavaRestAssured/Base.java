@@ -17,7 +17,7 @@ public class Base {
 		 prop=new Properties();
 		 FileInputStream fis=new  FileInputStream(System.getProperty("user.dir") +"\\src\\test\\java\\MavenCucumber\\MavenJavaRestAssured\\global.properties");
 		 prop.load(fis);
-		System.setProperty("webdriver.chrome.driver", "C:\\Cucumber\\83\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Cucumber Latest\\83\\chromedriver.exe");
        driver=new ChromeDriver();
        driver.get(prop.getProperty("url"));
        return driver;

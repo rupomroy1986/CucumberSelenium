@@ -29,7 +29,7 @@ public class MyStepDefinitions {
 	}
 	
 	
-	//if we use regular expression(.+) it can be used for both examples and without double quotes
+	//as we are driving from the examples it will look (.+)
     @When("^User searched for (.+) Vegetable$")
     public void user_searched_for_vegetable(String name) throws Throwable {
     	Thread.sleep(5000);
