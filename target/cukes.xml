@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.386402">
-<testcase classname="Search and place order for Vegetables" name="Search for items and validate results" time="20.386402">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="48.825501">
+<testcase classname="Search and place order for Vegetables" name="Search for items and validate results" time="23.485165">
 <system-out><![CDATA[Given User is on Greencart Landing page.....................................passed
 When User searched for cucumber Vegetable...................................passed
 Then "Cucumber - 1 Kg" results are displayed................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and place order for Vegetables" name="Search for items and then move to checkout page" time="12.762619">
+<system-out><![CDATA[Given User is on Greencart Landing page.....................................passed
+When User searched for Brinjal Vegetable....................................passed
+And Added items to cart.....................................................passed
+And User proceeded to Checkout page for purchase............................passed
+Then verify selected Brinjal items are displayed in Check out page..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and place order for Vegetables" name="Search for items and then move to checkout page 2" time="12.577717">
+<system-out><![CDATA[Given User is on Greencart Landing page.....................................passed
+When User searched for Beetroot Vegetable...................................passed
+And Added items to cart.....................................................passed
+And User proceeded to Checkout page for purchase............................passed
+Then verify selected Beetroot items are displayed in Check out page.........passed
 ]]></system-out>
 </testcase>
 </testsuite>
